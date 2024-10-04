@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Extraescolares</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script>
+        function redirigir() {
+            window.location.href = "mensaje.html"; // Coloca la URL de destino aquí
+        }
+    </script>
+
+</head>
+<body>
+	<center><h1><i>INSTITUTO TECNOLOGICO DE TUXTEPEC</i></h1></center>
+	<strong><h2><p> Encuesta de Actividad Extraescolar</p></h2></strong>
+
+	<form action="mensaje.html" method="post"  align="left"> 
+		<label for="nombre">Nombre:</label>
+		<input size="60" id="nombre" type="text" name="nombre" placeholder="Apellido paterno, Apellido materno, Nombre(s)" required/><br><br>
+
+		<label>Edad:</label>
+		<input type="number" required/><br><br>
+
+		<label>Sexo:</label><br>
+		<input type="radio" name="boton">Hombre<br>
+		<input type="radio" name="boton">Mujer<br><br>
+
+		<label>Fecha de nacimiento</label><br>
+		<input type="date" name="fecha" /><br><br>
+
+		<label for="email">Correo electronico:</label><br>
+		<input type="email" name="email" id="" /><br><br>
+
+		<label>¿Aque club de Actividad extraescolar perteneces? ¿Cuál?</label><br>
+		<textarea name="texto" rows="4" cols="20"></textarea><br>
+
+		<input type="checkbox" name="" id=""> Futbol<br>
+		<input type="checkbox" name="" id=""> Basquetbol<br>
+		<input type="checkbox" name="" id=""> Voleibol<br>
+		<input type="checkbox" name="" id=""> Musica<br>
+		<input type="checkbox" name="" id=""> Danza<br>
+		<input type="checkbox" name="" id=""> Banda de guerra<br><br>
+
+		<fieldset align="left">
+			<legend>Escolaridad</legend><br>
+
+			 <label>Número de control: </label>
+  <input type="number" name="" maxlength="15" /><br><br>
+
+  <label>Semestre:</label>
+  <input type="number" name="" size="30"><br><br>
+  
+  <label>Grupo:</label> 
+  <input type="text" name="" size="30"><br><br>
+
+  <label>Especialidad:</label>
+<select name="menu">
+	<option>Licenciatura en Administración</option>
+	<option>Contador publico</option>
+	<option>Ingenieria Bioquímica</option>
+	<option>Ingenieria Civil</option>
+	<option>Ingenieria Electronica</option>
+	<option>Ingenieria Electromecánica</option>
+	<option>Ingenieria Informatica</option>
+	<option>Gestion empresarial</option>
+	<option>Ingenieria en Sistemas Computacionales</option>
+</select><br><br>
+
+<label> Turno:</label> <br>
+<input type="radio" name="boton"> Matutino<br>
+<input type="radio" name="boton"> Vespertino<br><br>
+
+
+
+		</fieldset><br><br>
+		<input type="submit" onclick="redirigir()" name="finalizar" value="Finalizar Encuesta">
+		
+	</form>
+</body>
+</html>
