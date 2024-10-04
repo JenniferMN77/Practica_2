@@ -5,6 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Extraescolares</title>
 	<link rel="stylesheet" href="style.css">
+<script>
+        function redirigir() {
+            window.location.href = "mensaje.html"; // Coloca la URL de destino aquí
+        }
+    </script>
 
 
 </head>
@@ -12,7 +17,7 @@
 	<center><h1><i>INSTITUTO TECNOLOGICO DE TUXTEPEC</i></h1></center>
 	<strong><h2><p> Encuesta de Actividad Extraescolar</p></h2></strong>
 
-	<form action="javascript:void(0);"  align="left"> 
+	<form action="mensaje.html"  align="left"> 
 		<label for="nombre">Nombre:</label>
 		<input size="60" id="nombre" type="text" name="nombre" placeholder="Apellido paterno, Apellido materno, Nombre(s)" /><br><br>
 
@@ -75,14 +80,6 @@
 <button type="submit" onclick="redirigir()" name="finalizar" value="Finalizar Encuesta"> Finalizar encuesta</button>
 	</form>
 
-	<script>
-document.addEventListener('DOMContentLoaded', function() {
-     const form = document.querySelector('.contact1-form');
-     form.addEventListener('submit', function(e) {
-       e.preventDefault();
-       window.location.href = 'mensaje.html';
-     });
-   });
-</script>
+
 </body>
 </html>
